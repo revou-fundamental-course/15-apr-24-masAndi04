@@ -1,0 +1,18 @@
+
+
+main {
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.section-introduction {
+    padding: 17px;
+    background-color: aquamarine;
+    border-radius: ;
+}
