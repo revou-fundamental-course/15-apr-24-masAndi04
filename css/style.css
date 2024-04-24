@@ -11,8 +11,38 @@ main {
     text-align: center;
 }
 
-.section-introduction {
-    padding: 17px;
-    background-color: aquamarine;
-    border-radius: ;
+.main-section {
+    padding: 16px;
+    background-color: lightgrey;
+    border-radius: 4px;
+}
+
+.section-celcius {
+    padding-top: 16px
+}
+
+.section-fahrenheit {
+    padding-top: 16px
+}
+
+.section-result {
+    padding-top: 16px
+}
+
+.section-explanation {
+    padding-top: 16px
+}
+
+textarea{
+    width: 75%;
+    height: 32px;
+}
+
+.formulasi-suhu {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.formulasi-suhu>sub {
+    font-style: normal;
 }
