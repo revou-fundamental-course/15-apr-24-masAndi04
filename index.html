@@ -7,13 +7,106 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-    <header class="main-title">
-        <h1>Temperature Converter by Andi Setiawan</h1>
-    </header>
+    <main>
 
-    <!-- section Introduction -->
-    <section class="section-introduction">
-        <p>Masukan Suhu Derajat Celcius (&deg;C)...</p>
-    </section>
+        <header class="main-title">
+            <h1>Temperature Converter by Andi Setiawan (masAndi04)</h1>
+        </header>
+
+        <section class="main-section">
+            <!-- section Introduction -->
+            <section>
+                <p>Masukan Suhu Derajat Celcius (&deg;C) ke kotak dibawah , lalu klik tombol Konversi 
+                    untuk mendapatkan hasil konversi dalam bentuk Fahreinheit (&deg;F)..</p>
+            </section>
+            
+            <form id="Celcius-to-F">
+                <section class="section-celcius">
+                    <header>
+                        <h3>Celcius (&deg;C)</h3>
+                    </header>
+            
+                    <article>
+                        <textarea rows="1" id="Celcius-to-F-input" placeholder="Celsius"
+                        oninput="temperatureConverter(this.value)" 
+                        onchange="temperatureConverter(this.value)"></textarea>
+
+                        <div class="container-button">
+                            <button id="button-convert" type="button">Convert</button>
+                            <button id="button-reset" onclick="reset()";>Reset</button>
+                            <button id="button-reverse" onclick="reverse()";>Reverse</button>
+                        </div>
+                    </article>
+                </section>
+        
+                <section class="section-fahrenheit">
+                    <header>
+                        <h3>Fahreinheit (&deg;F)</h3>
+                    </header>
+            
+                    <article>
+                        <textarea rows="1" placeholder="Fahreinheit" id="outputFahrenheit"></textarea>
+                    </article>
+                </section>
+            </form>
+    
+            <form id="F-to-Celcius">
+                <section class="section-fahrenheit">
+                    <header>
+                        <h3>Fahreinheit (&deg;F)</h3>
+                    </header>
+            
+                    <article>
+                        <textarea rows="1"></textarea>
+                    </article>
+                </section>
+    
+                <section class="section-celcius">
+                    <header>
+                        <h3>Celcius (&deg;C)</h3>   
+                    </header>
+            
+                    <article>
+                        <textarea rows="1"></textarea>
+                        <div class="container-button">
+                            <button id="button-convert"type="button">Convert</button>
+                            <button id="button-reset" onclick="reset()";>Reset</button>
+                            <button id="button-reverse" onclick="reverse()";>Reverse</button>
+                        </div>
+                    </article>
+                </section>
+            </form>
+
+                <section class="section-result">
+                    <header>
+                        <h3>Cara Kalkulasi :</h3>
+                    </header>
+            
+                    <article>
+                        <textarea rows="1" placeholder="Cara Kalkulasi"></textarea>
+                        <div id="output-kalkulasi"></div>
+                    </article>
+                </section>
+
+                <section class="section-explanation">
+                    <header>
+                        <h3>Cara Konversi dari (&deg;C) ke (&deg;F) :</h3>
+                    </header>
+                    <hr>
+                    <!--Footer-->
+                    <article>
+                        <h1 class="formulasi-suhu">Suhu S dalam derajat Fahreinheit (&deg;F) sama dengan suhu S dalam derajat 
+                            Celcius (&deg;C) kali 9/5 tambah 32</h1>
+                        <h1 class="formulasi-suhu">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub>x 9/5)+32</h1>
+                        <h1 class="formulasi-suhu">atau</h1>
+                        <h1 class="formulasi-suhu">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub>x 1.8)+32</h1>
+                    </article>
+                </section>        
+        </section>
+
+    </main>
+
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
