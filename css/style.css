@@ -18,24 +18,36 @@ main {
 }
 
 .section-celcius {
-    padding-top: 16px
+    padding-top: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; 
 }
 
 .section-fahrenheit {
-    padding-top: 16px
+    padding-top: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 .section-result {
-    padding-top: 16px
+    padding-top: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 .section-explanation {
-    padding-top: 16px
+    padding-top: 16px;
+    resize: none;
 }
 
 textarea{
-    width: 75%;
+    width: 95%;
     height: 32px;
+    border: 2px solid lavender;
+    border-radius: 4px;
+    color: coral;
+    font-size: 16px;
+    resize: none; 
 }
 
 .formulasi-suhu {
@@ -45,4 +57,40 @@ textarea{
 
 .formulasi-suhu>sub {
     font-style: normal;
+    font-size: 16px;
+}
+
+.container-button {
+    padding-top: 7px;
+}
+button {
+    border: none;
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button-convert {
+    background-color: aqua;
+    color: black;
+    margin-right: 7px;
+}
+#button-reset {
+    background-color: palevioletred;
+    color: black;
+    margin-right: 7px;
+}
+#button-reverse {
+    background-color: greenyellow;
+    color: black;
+}
+
+#F-to-Celcius {
+    display: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .container-button {
+        display: none;
+    }
 }
