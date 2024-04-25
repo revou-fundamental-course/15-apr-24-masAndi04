@@ -44,3 +44,4 @@ var hasil = document.getElementById("output-kalkulasi");
 // menampilkan output ke element kalkulasi
 hasil.innerHTML = "S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub>x 1.8)+32";
 
+
